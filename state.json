@@ -21,6 +21,164 @@
       ],
       "price": 100000,
       "status": "approved"
+    },
+    "002-tenzero-cica-peeling-gel": {
+      "file_ids": [
+        "AgACAgIAAxUHaueKfnOSGZ1gccZmo2USB6EUpe4AAgooaxv5FzhLYxVUJ9rriQYBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKfrJaxSuM8HyqCcv_FOoRio8AAg4oaxv5FzhL7eaxuRIlzVUBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKftQjTS3uwtwzujvDcpfIfboAAgwoaxv5FzhLB7YforDKnyMBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKfgRh5chTVdbS1dsdY4bzFBUAAg0oaxv5FzhLOhm-h1-uNboBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKftoGl4ZVDWRwws_XBkG07XYAAgsoaxv5FzhLo3LkDxaIbvgBAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
+    },
+    "003-tenzero-snail-hand-cream": {
+      "file_ids": [
+        "AgACAgIAAxUHaueKiXBHv4KzmRTQXNttLElSysYAAhAoaxv5FzhL0Il2YVJ3V3cBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKiRsaZL10KViqm3lfgv0W3MkAAhIoaxv5FzhL8ehRu_OlkeQBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKieEKOFQdaXVvqKMxdXHTCEIAAg8oaxv5FzhLYq6V5zjKLPQBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKidgEzburITZ3uGkV44kc0M4AAhMoaxv5FzhLauNKVh11jjABAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKiYEERk4Ua-WGcSw1xx6LZyYAAhEoaxv5FzhL-qLlSoH8d9ABAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
+    },
+    "004-tenzero-peach-hand-cream": {
+      "file_ids": [
+        "AgACAgIAAxUHaueKjP4Vn2c2phubKqxxHORuqXcAAhYoaxv5FzhL8mPHgcfEajEBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKjDZevpqC6YbJPT1HOm7OptUAAhgoaxv5FzhLNX34Nl7Xyj4BAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKjHcGWQX3yvzc0T2rdHEn0OMAAhcoaxv5FzhLMWh-cuC2kHwBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKjJYpaNwZ_-24qiLimW-eu9IAAhQoaxv5FzhL-k5sj8XTAAHcAQADAgADdwADPQQ",
+        "AgACAgIAAxUHaueKjBeP_1UseDxwyii6L2uR4yQAAhUoaxv5FzhLyj7u4zoHP5oBAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
+    },
+    "005-beauty-of-joseon-relief-sun": {
+      "file_ids": [
+        "AgACAgIAAxUHaueKjgVyIZrJtAywax8XRE8mueoAAhkoaxv5FzhL-U_CGAppxlQBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKjtcUX6GEdWZsayNpK_wv6a0AAhooaxv5FzhL3zpjLdV78lsBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKjksy5rzahq7l2YasgohP26IAAhwoaxv5FzhL43QOvn_IbA4BAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKjp1AuAY1DitsKTEGyxYeg_4AAhsoaxv5FzhLpdzocqqCU8gBAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
+    },
+    "006-dalba-white-truffle-serum": {
+      "file_ids": [
+        "AgACAgIAAxUHaueKkAh1G4VQgTsnQQ7M1LT_iy0AAiEoaxv5FzhLFDfbpOBxsWEBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKkPMVWx1UAuPIHwNLQSnNTNYAAh4oaxv5FzhLcTcN_1dk8zMBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKkCdwIP5LYPWfFaV0OgghTqgAAiAoaxv5FzhLruEQPKafZ8EBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKkIKVCjAfxlyp0HuBR0AjKfwAAh8oaxv5FzhL_W4MpvwIKZQBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKkNubcxXNsK5qcv4ZQLGvdXAAAh0oaxv5FzhLwy8Fj6UjbEcBAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
+    },
+    "007-dj-carbon-therapy": {
+      "file_ids": [
+        "AgACAgIAAxUHaueKnFi85TPMhmCAdzfmC-YOr7MAAiQoaxv5FzhLJZ5k6fLX2ZQBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKnODbdnIIounnaDLzAAEJttIlAAIjKGsb-Rc4Sy69aM9nqE4dAQADAgADdwADPQQ",
+        "AgACAgIAAxUHaueKnIUkj8CiQTEI9x565HlYAAHDAAIlKGsb-Rc4S_KbZ0CzXlRHAQADAgADdwADPQQ",
+        "AgACAgIAAxUHaueKnHU-aWuLHkZSh0uS7xIujlAAAiIoaxv5FzhLToXYMKvxaRQBAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
+    },
+    "008-juno-acai-berry-peeling-soap": {
+      "file_ids": [
+        "AgACAgIAAxUHaueKn-7BmMqrDx1R2pJVMqXbqEUAAicoaxv5FzhLBTQuNR3JlNABAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKn-lNk7O7rn75fBsE1HoQQJsAAikoaxv5FzhL3YsOR6BeuwIBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKn5m0qwABrOTDEsruhgrEn4DSAAImKGsb-Rc4SwEpF1_TYB9OAQADAgADdwADPQQ",
+        "AgACAgIAAxUHaueKn7x_vCxS_aIt27yj8CAfuAUAAiooaxv5FzhL-7P3rEZ4zOsBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueKn8wPpL7cFpRwO-A4vNwUc2AAAigoaxv5FzhLcru1hvIkmCcBAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
+    },
+    "009-lacto-fit-diet": {
+      "status": "new"
+    },
+    "010-lamelin-cica-4in1-cream": {
+      "status": "new"
+    },
+    "011-luvum-moisture-travel-kit": {
+      "status": "new"
+    },
+    "012-luvum-hyaluronic-sun-cream": {
+      "status": "new"
+    },
+    "013-stay-nude-hair-body-mist": {
+      "status": "new"
+    },
+    "014-stay-nudie-compact-set": {
+      "status": "new"
+    },
+    "015-no-sweat-no-stress": {
+      "status": "new"
+    },
+    "016-ricocell-uv-shield-sun-cream": {
+      "status": "new"
+    },
+    "017-ricocell-snail-mask": {
+      "status": "new"
+    },
+    "018-ricocell-collagen-mask": {
+      "status": "new"
+    },
+    "019-divina-bellezza-truffle-hydrogel-mask": {
+      "status": "new"
+    },
+    "020-daily-comma-most-blanc-rose-hair-perfume": {
+      "status": "new"
+    },
+    "021-most-marine-breeze-edp": {
+      "status": "new"
+    },
+    "022-round-lab-birch-juice-sunscreen": {
+      "status": "new"
+    },
+    "023-anjo-365-sun-cream": {
+      "status": "new"
+    },
+    "024-salmon-lab-vgene-cc-cream": {
+      "status": "new"
+    },
+    "025-lovely-makeup-liquid-eyeliner": {
+      "status": "new"
+    },
+    "026-black-eyeliner-stylish": {
+      "status": "new"
+    },
+    "027-curling-mascara": {
+      "status": "new"
+    },
+    "028-prorance-premium-lipstick": {
+      "status": "new"
+    },
+    "029-tirtir-mask-fit-red-cushion": {
+      "status": "new"
+    },
+    "030-lalarecipe-yuzu-peel-cleanser": {
+      "status": "new"
+    },
+    "031-lalarecipe-yuzu-peel-cleanser-pump": {
+      "status": "new"
+    },
+    "032-rice-water-bright-cleansing-oil": {
+      "status": "new"
+    },
+    "033-eriell-face-body-whitening-cream": {
+      "status": "new"
+    },
+    "034-dermashare-compact": {
+      "status": "new"
+    },
+    "035-korean-eye-patches": {
+      "status": "new"
+    },
+    "036-foellie-dark-green-box": {
+      "status": "new"
+    },
+    "037-foellie-pink-xo-box": {
+      "status": "new"
+    },
+    "038-foellie-beige-box": {
+      "status": "new"
     }
   },
   "preview_msgs": {
@@ -29,6 +187,46 @@
     "8337581357:15": "001-tenzeu-avocado-peeling-gel",
     "8337581357:16": "001-tenzeu-avocado-peeling-gel",
     "8337581357:17": "001-tenzeu-avocado-peeling-gel",
-    "8337581357:18": "001-tenzeu-avocado-peeling-gel"
+    "8337581357:18": "001-tenzeu-avocado-peeling-gel",
+    "8337581357:25": "002-tenzero-cica-peeling-gel",
+    "8337581357:26": "002-tenzero-cica-peeling-gel",
+    "8337581357:27": "002-tenzero-cica-peeling-gel",
+    "8337581357:28": "002-tenzero-cica-peeling-gel",
+    "8337581357:29": "002-tenzero-cica-peeling-gel",
+    "8337581357:30": "002-tenzero-cica-peeling-gel",
+    "8337581357:31": "003-tenzero-snail-hand-cream",
+    "8337581357:32": "003-tenzero-snail-hand-cream",
+    "8337581357:33": "003-tenzero-snail-hand-cream",
+    "8337581357:34": "003-tenzero-snail-hand-cream",
+    "8337581357:35": "003-tenzero-snail-hand-cream",
+    "8337581357:36": "003-tenzero-snail-hand-cream",
+    "8337581357:37": "004-tenzero-peach-hand-cream",
+    "8337581357:38": "004-tenzero-peach-hand-cream",
+    "8337581357:39": "004-tenzero-peach-hand-cream",
+    "8337581357:40": "004-tenzero-peach-hand-cream",
+    "8337581357:41": "004-tenzero-peach-hand-cream",
+    "8337581357:42": "004-tenzero-peach-hand-cream",
+    "8337581357:43": "005-beauty-of-joseon-relief-sun",
+    "8337581357:44": "005-beauty-of-joseon-relief-sun",
+    "8337581357:45": "005-beauty-of-joseon-relief-sun",
+    "8337581357:46": "005-beauty-of-joseon-relief-sun",
+    "8337581357:47": "005-beauty-of-joseon-relief-sun",
+    "8337581357:48": "006-dalba-white-truffle-serum",
+    "8337581357:49": "006-dalba-white-truffle-serum",
+    "8337581357:50": "006-dalba-white-truffle-serum",
+    "8337581357:51": "006-dalba-white-truffle-serum",
+    "8337581357:52": "006-dalba-white-truffle-serum",
+    "8337581357:53": "006-dalba-white-truffle-serum",
+    "8337581357:54": "007-dj-carbon-therapy",
+    "8337581357:55": "007-dj-carbon-therapy",
+    "8337581357:56": "007-dj-carbon-therapy",
+    "8337581357:57": "007-dj-carbon-therapy",
+    "8337581357:58": "007-dj-carbon-therapy",
+    "8337581357:59": "008-juno-acai-berry-peeling-soap",
+    "8337581357:60": "008-juno-acai-berry-peeling-soap",
+    "8337581357:61": "008-juno-acai-berry-peeling-soap",
+    "8337581357:62": "008-juno-acai-berry-peeling-soap",
+    "8337581357:63": "008-juno-acai-berry-peeling-soap",
+    "8337581357:64": "008-juno-acai-berry-peeling-soap"
   }
 }
