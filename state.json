@@ -2,9 +2,11 @@
   "admin_chat_ids": [
     8337581357
   ],
-  "awaiting": {},
+  "awaiting": {
+    "8337581357": "001-tenzeu-avocado-peeling-gel"
+  },
   "done_slots": [],
-  "offset": 795423837,
+  "offset": 795423839,
   "posts": {
     "001-tenzeu-avocado-peeling-gel": {
       "file_ids": [
