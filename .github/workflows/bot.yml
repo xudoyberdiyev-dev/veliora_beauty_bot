@@ -2,7 +2,7 @@ name: Veliora bot
 
 on:
   schedule:
-    - cron: "2,32 * * * *"   # har 30 daqiqada (UTC). Bot Toshkent vaqtini o'zi hisoblaydi.
+    - cron: "7,37 * * * *"   # har 30 daqiqada (UTC). Bot Toshkent vaqtini o'zi hisoblaydi.
   workflow_dispatch:          # Actions sahifasidan qo'lda ishga tushirish
     inputs:
       live_minutes:
