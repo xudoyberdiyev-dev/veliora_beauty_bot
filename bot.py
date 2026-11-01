@@ -459,6 +459,8 @@ def main():
     if not token:
         sys.exit("BOT_TOKEN topilmadi (GitHub → Settings → Secrets → Actions).")
     config = load_json(CONFIG_FILE, {})
+    if not config.get("channel") and os.environ.get("CHANNEL_ID", "").strip():
+        config["channel"] = os.environ["CHANNEL_ID"].strip()
     state = load_json(STATE_FILE, {})
     bot = Bot(Telegram(token), config, state, datetime.now(TZ))
     bot.run()

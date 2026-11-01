@@ -22,7 +22,8 @@ jobs:
       - name: Botni ishga tushirish
         run: python3 bot.py
         env:
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.BOT_TOKEN }}
+          CHANNEL_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
       - name: Holatni saqlash
         if: always()
