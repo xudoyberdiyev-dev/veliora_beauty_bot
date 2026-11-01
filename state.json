@@ -5,10 +5,13 @@
   "awaiting": {
     "8337581357": "001-tenzeu-avocado-peeling-gel"
   },
+  "channel_id": -1004383680488,
+  "channel_title": "VELIORA BEAUTY",
   "done_slots": [],
-  "offset": 795423839,
+  "offset": 795423843,
   "posts": {
     "001-tenzeu-avocado-peeling-gel": {
+      "approved_at": "2026-11-01T23:36:42.594194+05:00",
       "file_ids": [
         "AgACAgIAAxUHaueFqZrOK_ohX37RBw-pFFg4JpEAAugnaxv5FzhLFIASLrnYydwBAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueFqY0UmJLdxZ1PQN7sr6E93SkAAucnaxv5FzhLQP_F3tCeTXABAAMCAAN3AAM9BA",
@@ -16,7 +19,8 @@
         "AgACAgIAAxUHaueFqZMte9ytF22qbJNSUL9mJ2MAAuonaxv5FzhLpymkDF_vuiIBAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueFqTZ31JUd1Wj2NxpKoEDwJI4AAusnaxv5FzhL3eD2tvETv3MBAAMCAAN3AAM9BA"
       ],
-      "status": "pending"
+      "price": 100000,
+      "status": "approved"
     }
   },
   "preview_msgs": {
