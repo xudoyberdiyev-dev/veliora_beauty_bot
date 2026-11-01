@@ -4,7 +4,25 @@
   ],
   "awaiting": {},
   "done_slots": [],
-  "offset": 0,
-  "posts": {},
-  "preview_msgs": {}
+  "offset": 795423837,
+  "posts": {
+    "001-tenzeu-avocado-peeling-gel": {
+      "file_ids": [
+        "AgACAgIAAxUHaueFqZrOK_ohX37RBw-pFFg4JpEAAugnaxv5FzhLFIASLrnYydwBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueFqY0UmJLdxZ1PQN7sr6E93SkAAucnaxv5FzhLQP_F3tCeTXABAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueFqR_3dHwe5HISklx9MHwyHycAAuknaxv5FzhLA9Jyq32gKrMBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueFqZMte9ytF22qbJNSUL9mJ2MAAuonaxv5FzhLpymkDF_vuiIBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHaueFqTZ31JUd1Wj2NxpKoEDwJI4AAusnaxv5FzhL3eD2tvETv3MBAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
+    }
+  },
+  "preview_msgs": {
+    "8337581357:13": "001-tenzeu-avocado-peeling-gel",
+    "8337581357:14": "001-tenzeu-avocado-peeling-gel",
+    "8337581357:15": "001-tenzeu-avocado-peeling-gel",
+    "8337581357:16": "001-tenzeu-avocado-peeling-gel",
+    "8337581357:17": "001-tenzeu-avocado-peeling-gel",
+    "8337581357:18": "001-tenzeu-avocado-peeling-gel"
+  }
 }
