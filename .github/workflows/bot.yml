@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "2,32 * * * *"   # har 30 daqiqada (UTC). Bot Toshkent vaqtini o'zi hisoblaydi.
   workflow_dispatch:          # Actions sahifasidan qo'lda ishga tushirish
+    inputs:
+      live_minutes:
+        description: "Jonli rejim (daqiqa): bot shuncha vaqt xabarlarga darhol javob beradi"
+        default: "0"
 
 permissions:
   contents: write
@@ -15,7 +19,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
 
@@ -24,6 +28,7 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.BOT_TOKEN }}
           ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          LIVE_MINUTES: ${{ inputs.live_minutes }}
 
       - name: Holatni saqlash
         if: always()

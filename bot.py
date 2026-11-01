@@ -180,10 +180,10 @@ class Bot:
         return chat_id in self.st["admin_chat_ids"]
 
     # --- 1. kelgan xabarlar
-    def process_updates(self):
+    def process_updates(self, poll=0):
         while True:
             updates = self.tg.call("getUpdates", {
-                "offset": self.st["offset"], "timeout": 0, "limit": 100,
+                "offset": self.st["offset"], "timeout": poll, "limit": 100,
                 "allowed_updates": ["message", "callback_query", "my_chat_member"]})
             if not updates:
                 return
@@ -199,6 +199,8 @@ class Bot:
                 except Exception as e:  # bitta xabar xatosi butun ishni to'xtatmasin
                     log("update xato:", repr(e))
                 self.save()
+            if poll:
+                return
 
     def on_member(self, m):
         chat = m["chat"]
@@ -236,6 +238,13 @@ class Bot:
             return
         if text.startswith("/holat"):
             self.send(cid, self.status_text())
+            return
+        if text.startswith("/hozir"):
+            queue = self.queue()
+            if not queue:
+                self.send(cid, "Navbatda tasdiqlangan post yo'q.")
+            elif self.publish(queue[0], "hozir"):
+                self.send(cid, "✅ Post hoziroq kanalga joylandi.")
             return
 
         # narx: yo preview xabariga javob (reply), yo oxirgi bosilgan ✅ tugmasi
@@ -396,7 +405,7 @@ class Bot:
         key = slot.strftime("%Y-%m-%d %H:%M")
         if key in self.st["done_slots"]:
             return
-        channel = self.cfg.get("channel") or self.st.get("channel_id")
+        channel = self.channel()
         queue = self.queue()
         if not channel:
             self.notify_admins("⚠️ Kanal aniqlanmadi. config.json dagi \"channel\" ga kanal "
@@ -405,20 +414,35 @@ class Bot:
             self.notify_admins(f"⚠️ Soat {slot:%H:%M} dagi post uchun tasdiqlangan post qolmadi. "
                                "Shuning uchun bu vaqt o'tkazib yuborildi.")
         else:
-            pid = queue[0]
-            p, s = self.posts[pid], self.ps(pid)
-            caption = p["text"].replace(PRICE_TAG, fmt_price(s["price"]))
+            self.publish(queue[0], f"{slot:%H:%M}")
+        self.st["done_slots"] = (self.st["done_slots"] + [key])[-30:]
+        self.save()
+
+    def channel(self):
+        return self.cfg.get("channel") or self.st.get("channel_id")
+
+    def publish(self, pid, label):
+        channel = self.channel()
+        if not channel:
+            self.notify_admins("⚠️ Kanal aniqlanmadi. Botni kanalda adminlikdan olib, qaytadan admin qiling.")
+            return False
+        p, s = self.posts[pid], self.ps(pid)
+        caption = p["text"].replace(PRICE_TAG, fmt_price(s["price"]))
+        try:
             if tg_len(caption) <= CAPTION_LIMIT:
                 msgs = self.send_album(channel, p, caption)
             else:  # matn uzun — albom, so'ng alohida matn
                 msgs = self.send_album(channel, p, None)
                 self.tg.call("sendMessage", {"chat_id": channel, "text": caption, "parse_mode": "HTML"})
-            s.update(status="posted", posted_at=self.now.isoformat(), message_id=msgs[0]["message_id"])
-            left = len(self.queue())
-            self.notify_admins(f"📢 Kanalga chiqdi ({slot:%H:%M}): {html.escape(self.title(pid))}\n"
-                               f"Navbatda yana {left} ta tasdiqlangan post bor.")
-        self.st["done_slots"] = (self.st["done_slots"] + [key])[-30:]
+        except TgError as e:
+            self.notify_admins(f"⚠️ Kanalga joylab bo'lmadi: {html.escape(str(e))}\n"
+                               "Bot kanalda admin va \"Post joylash\" huquqi borligini tekshiring.")
+            return False
+        s.update(status="posted", posted_at=self.now.isoformat(), message_id=msgs[0]["message_id"])
+        self.notify_admins(f"📢 Kanalga chiqdi ({label}): {html.escape(self.title(pid))}\n"
+                           f"Navbatda yana {len(self.queue())} ta tasdiqlangan post bor.")
         self.save()
+        return True
 
     def status_text(self):
         c = {}
@@ -434,11 +458,17 @@ class Bot:
                 f"❌ Bekor qilingan: {c.get('rejected', 0)}\n\n"
                 f"Navbatdagi post: {self.eta(1) if q else '—'}")
 
-    def run(self):
+    def run(self, live_minutes=0):
         self.process_updates()
         self.publish_if_due()
         self.send_previews()
         self.save()
+        end = time.time() + live_minutes * 60
+        while time.time() < end:  # jonli rejim: xabarlarga darhol javob
+            self.now = datetime.now(TZ)
+            self.process_updates(poll=min(25, max(1, int(end - time.time()))))
+            self.send_previews()
+            self.save()
 
 
 HELP_TEXT = (
@@ -449,7 +479,8 @@ HELP_TEXT = (
     "3️⃣ Post navbatga tushadi va jadval bo'yicha kanalga chiqadi: "
     "08:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00.\n"
     "❌ <b>Bekor qilish</b> — post kanalga chiqmaydi.\n\n"
-    "/holat — nechta post navbatda\n\n"
+    "/holat — nechta post navbatda\n"
+    "/hozir — navbatdagi postni hoziroq kanalga joylash\n\n"
     "⏱ Bot har 30 daqiqada xabarlarni tekshiradi, shuning uchun javob biroz kechikib keladi."
 )
 
@@ -466,7 +497,8 @@ def main():
         bot.st["admin_chat_ids"].append(int(admin))
         bot.send(int(admin), "✅ Siz <b>VELIORA BEAUTY</b> boti admini sifatida ulandingiz.\n\n"
                              "Yangi postlar shu yerga ko'rib chiqish uchun keladi.\n/yordam — qo'llanma.")
-    bot.run()
+    live = os.environ.get("LIVE_MINUTES", "").strip()
+    bot.run(live_minutes=min(int(live), 60) if live.isdigit() else 0)
     log("tayyor")
 
 
