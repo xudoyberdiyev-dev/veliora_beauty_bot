@@ -23,7 +23,7 @@ jobs:
         run: python3 bot.py
         env:
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.BOT_TOKEN }}
-          CHANNEL_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
       - name: Holatni saqlash
         if: always()

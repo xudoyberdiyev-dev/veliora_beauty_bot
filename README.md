@@ -17,7 +17,7 @@ javoblar 30 daqiqagacha kechikishi mumkin. Postlar jadvaldagi vaqtdan bir necha 
 
 ## Sozlash (bir marta)
 1. **Token:** repo → **Settings → Secrets and variables → Actions → New repository secret**  
-   Name: `TELEGRAM_BOT_TOKEN` (kanal ID/username: `TELEGRAM_CHAT_ID`, ixtiyoriy), Secret: @BotFather bergan token.
+   Name: `TELEGRAM_BOT_TOKEN` va `TELEGRAM_CHAT_ID` — admin (sizning) shaxsiy chat ID'ingiz, Secret: @BotFather bergan token.
 2. Botni kanalga **admin** qiling ("Post joylash" huquqi bilan).
 3. Botga `/start` yozing. Birinchi `/start` yozgan odam admin bo'ladi
    (yoki `config.json` → `admin_usernames` ga username yozing).

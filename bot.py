@@ -459,10 +459,13 @@ def main():
     if not token:
         sys.exit("BOT_TOKEN topilmadi (GitHub → Settings → Secrets → Actions).")
     config = load_json(CONFIG_FILE, {})
-    if not config.get("channel") and os.environ.get("CHANNEL_ID", "").strip():
-        config["channel"] = os.environ["CHANNEL_ID"].strip()
     state = load_json(STATE_FILE, {})
     bot = Bot(Telegram(token), config, state, datetime.now(TZ))
+    admin = os.environ.get("ADMIN_CHAT_ID", "").strip()
+    if re.fullmatch(r"-?\d+", admin) and int(admin) not in bot.st["admin_chat_ids"]:
+        bot.st["admin_chat_ids"].append(int(admin))
+        bot.send(int(admin), "✅ Siz <b>VELIORA BEAUTY</b> boti admini sifatida ulandingiz.\n\n"
+                             "Yangi postlar shu yerga ko'rib chiqish uchun keladi.\n/yordam — qo'llanma.")
     bot.run()
     log("tayyor")
 
