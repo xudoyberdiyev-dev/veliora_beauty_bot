@@ -7,7 +7,9 @@
   },
   "channel_id": -1004383680488,
   "channel_title": "VELIORA BEAUTY",
-  "done_slots": [],
+  "done_slots": [
+    "2026-11-02 10:00"
+  ],
   "offset": 795423844,
   "posts": {
     "001-tenzeu-avocado-peeling-gel": {
@@ -19,8 +21,10 @@
         "AgACAgIAAxUHaueFqZMte9ytF22qbJNSUL9mJ2MAAuonaxv5FzhLpymkDF_vuiIBAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueFqTZ31JUd1Wj2NxpKoEDwJI4AAusnaxv5FzhL3eD2tvETv3MBAAMCAAN3AAM9BA"
       ],
+      "message_id": 58,
+      "posted_at": "2026-11-02T10:54:29.276073+05:00",
       "price": 100000,
-      "status": "approved"
+      "status": "posted"
     },
     "002-tenzero-cica-peeling-gel": {
       "file_ids": [
