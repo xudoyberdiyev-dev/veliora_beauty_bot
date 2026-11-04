@@ -2,9 +2,7 @@
   "admin_chat_ids": [
     8337581357
   ],
-  "awaiting": {
-    "8337581357": "001-tenzeu-avocado-peeling-gel"
-  },
+  "awaiting": {},
   "channel_id": -1004383680488,
   "channel_title": "VELIORA BEAUTY",
   "done_slots": [
@@ -14,7 +12,7 @@
     "2026-11-03 16:00",
     "2026-11-04 20:00"
   ],
-  "offset": 795423846,
+  "offset": 795423851,
   "posts": {
     "001-tenzeu-avocado-peeling-gel": {
       "approved_at": "2026-11-01T23:36:42.594194+05:00",
@@ -31,6 +29,7 @@
       "status": "posted"
     },
     "002-tenzero-cica-peeling-gel": {
+      "approved_at": "2026-11-05T03:03:50.265645+05:00",
       "file_ids": [
         "AgACAgIAAxUHaueKfnOSGZ1gccZmo2USB6EUpe4AAgooaxv5FzhLYxVUJ9rriQYBAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueKfrJaxSuM8HyqCcv_FOoRio8AAg4oaxv5FzhL7eaxuRIlzVUBAAMCAAN3AAM9BA",
@@ -38,7 +37,8 @@
         "AgACAgIAAxUHaueKfgRh5chTVdbS1dsdY4bzFBUAAg0oaxv5FzhLOhm-h1-uNboBAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueKftoGl4ZVDWRwws_XBkG07XYAAgsoaxv5FzhLo3LkDxaIbvgBAAMCAAN3AAM9BA"
       ],
-      "status": "pending"
+      "price": 120000,
+      "status": "approved"
     },
     "003-tenzero-snail-hand-cream": {
       "file_ids": [
@@ -99,7 +99,14 @@
       "status": "pending"
     },
     "009-lacto-fit-diet": {
-      "status": "new"
+      "file_ids": [
+        "AgACAgIAAxUHauur2pmllr7uJQQvgeNeLbBXrpMAAgwlaxu8IWFLMjwObk36WBUBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauur2jwvLldGShxzh2n42pRRBKQAAg8laxu8IWFL8DDx9CTgYn8BAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauur2kPztxpiTt5FMoKgSgQYwfIAAg4laxu8IWFLJGYZfE_Qp5wBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauur2pEodZSxLvolTQruNiLqXRYAAg0laxu8IWFLln8iqGb9QgYBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauur2lzgbNHAa6ytfRy2WGPFJukAAhAlaxu8IWFLGk4odVA8BaYBAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
     },
     "010-lamelin-cica-4in1-cream": {
       "status": "new"
@@ -235,6 +242,12 @@
     "8337581357:61": "008-juno-acai-berry-peeling-soap",
     "8337581357:62": "008-juno-acai-berry-peeling-soap",
     "8337581357:63": "008-juno-acai-berry-peeling-soap",
-    "8337581357:64": "008-juno-acai-berry-peeling-soap"
+    "8337581357:64": "008-juno-acai-berry-peeling-soap",
+    "8337581357:77": "009-lacto-fit-diet",
+    "8337581357:78": "009-lacto-fit-diet",
+    "8337581357:79": "009-lacto-fit-diet",
+    "8337581357:80": "009-lacto-fit-diet",
+    "8337581357:81": "009-lacto-fit-diet",
+    "8337581357:82": "009-lacto-fit-diet"
   }
 }
