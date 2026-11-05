@@ -477,7 +477,7 @@ HELP_TEXT = (
     "2️⃣ <b>✅ Tasdiqlash</b> ni bosing va narxini yozing (masalan <code>220000</code>).\n"
     "    Yoki post xabariga javob (reply) qilib narxni yozsangiz ham bo'ladi.\n"
     "3️⃣ Post navbatga tushadi va jadval bo'yicha kanalga chiqadi: "
-    "08:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00.\n"
+    "har soatda 08:00 dan 19:00 gacha.\n"
     "❌ <b>Bekor qilish</b> — post kanalga chiqmaydi.\n\n"
     "/holat — nechta post navbatda\n"
     "/hozir — navbatdagi postni hoziroq kanalga joylash\n\n"
