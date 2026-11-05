@@ -161,6 +161,25 @@ class Bot:
     def ps(self, pid):
         return self.st["posts"].setdefault(pid, {"status": "new"})
 
+    def track(self, pid, cid, msg):
+        """Post bilan bog'liq chatdagi xabarni eslab qoladi (keyin o'chirish uchun)."""
+        if msg and msg.get("message_id"):
+            self.ps(pid).setdefault("chat_msgs", []).append([cid, msg["message_id"]])
+
+    def cleanup_chat(self, pid):
+        """Post kanalga chiqqach, uning admin chatidagi barcha xabarlarini o'chiradi."""
+        targets = [m for m in self.ps(pid).pop("chat_msgs", [])]
+        for key, v in list(self.st["preview_msgs"].items()):
+            if v == pid:
+                cid, mid = key.split(":")
+                targets.append([int(cid), int(mid)])
+                del self.st["preview_msgs"][key]
+        for cid, mid in targets:
+            try:
+                self.tg.call("deleteMessage", {"chat_id": cid, "message_id": mid})
+            except TgError as e:  # 48 soatdan eski xabarlarni Telegram o'chirtirmaydi
+                log("deleteMessage:", e)
+
     def title(self, pid):
         p = self.posts.get(pid)
         return first_line(p["text"]) if p else pid
@@ -258,9 +277,10 @@ class Bot:
             self.send(cid, "Avval postning ostidagi <b>✅ Tasdiqlash</b> tugmasini bosing, "
                            "keyin narxini yozing.")
             return
+        self.track(pid, cid, msg)
         price = parse_price(text)
         if price is None:
-            self.send(cid, "Narxni raqam bilan yozing, masalan: <code>220000</code>")
+            self.track(pid, cid, self.send(cid, "Narxni raqam bilan yozing, masalan: <code>220000</code>"))
             return
         self.approve(cid, pid, price)
 
@@ -281,8 +301,8 @@ class Bot:
             return
         if action == "ok":
             self.st["awaiting"][str(cid)] = pid
-            self.send(cid, f"💰 <b>{html.escape(self.title(pid))}</b>\n\nNarxini yozing "
-                           "(masalan: <code>220000</code>):")
+            self.track(pid, cid, self.send(cid, f"💰 <b>{html.escape(self.title(pid))}</b>\n\nNarxini yozing "
+                                                "(masalan: <code>220000</code>):"))
         elif action == "no":
             s["status"] = "rejected"
             self.st["awaiting"].pop(str(cid), None)
@@ -297,9 +317,9 @@ class Bot:
         self.st["awaiting"].pop(str(cid), None)
         queue = self.queue()
         place = queue.index(pid) + 1 if pid in queue else len(queue)
-        self.send(cid, f"✅ <b>Tasdiqlandi!</b>\n{html.escape(self.title(pid))}\n"
+        self.track(pid, cid, self.send(cid, f"✅ <b>Tasdiqlandi!</b>\n{html.escape(self.title(pid))}\n"
                        f"💰 Narx: <b>{fmt_price(price)}</b>\n"
-                       f"📅 Navbatda: {place}-o'rinda. Taxminiy vaqt: {self.eta(place)}")
+                       f"📅 Navbatda: {place}-o'rinda. Taxminiy vaqt: {self.eta(place)}"))
 
     # --- 2. ko'rib chiqishga yuborish
     def send_previews(self):
@@ -439,6 +459,7 @@ class Bot:
                                "Bot kanalda admin va \"Post joylash\" huquqi borligini tekshiring.")
             return False
         s.update(status="posted", posted_at=self.now.isoformat(), message_id=msgs[0]["message_id"])
+        self.cleanup_chat(pid)
         self.notify_admins(f"📢 Kanalga chiqdi ({label}): {html.escape(self.title(pid))}\n"
                            f"Navbatda yana {len(self.queue())} ta tasdiqlangan post bor.")
         self.save()
