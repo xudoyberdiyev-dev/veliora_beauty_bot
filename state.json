@@ -10,9 +10,10 @@
     "2026-11-02 20:00",
     "2026-11-03 08:00",
     "2026-11-03 16:00",
-    "2026-11-04 20:00"
+    "2026-11-04 20:00",
+    "2026-11-05 10:00"
   ],
-  "offset": 795423851,
+  "offset": 795423858,
   "posts": {
     "001-tenzeu-avocado-peeling-gel": {
       "approved_at": "2026-11-01T23:36:42.594194+05:00",
@@ -37,10 +38,13 @@
         "AgACAgIAAxUHaueKfgRh5chTVdbS1dsdY4bzFBUAAg0oaxv5FzhLOhm-h1-uNboBAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueKftoGl4ZVDWRwws_XBkG07XYAAgsoaxv5FzhLo3LkDxaIbvgBAAMCAAN3AAM9BA"
       ],
+      "message_id": 63,
+      "posted_at": "2026-11-05T10:19:34.431622+05:00",
       "price": 120000,
-      "status": "approved"
+      "status": "posted"
     },
     "003-tenzero-snail-hand-cream": {
+      "approved_at": "2026-11-05T10:22:08.601892+05:00",
       "file_ids": [
         "AgACAgIAAxUHaueKiXBHv4KzmRTQXNttLElSysYAAhAoaxv5FzhL0Il2YVJ3V3cBAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueKiRsaZL10KViqm3lfgv0W3MkAAhIoaxv5FzhL8ehRu_OlkeQBAAMCAAN3AAM9BA",
@@ -48,9 +52,11 @@
         "AgACAgIAAxUHaueKidgEzburITZ3uGkV44kc0M4AAhMoaxv5FzhLauNKVh11jjABAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueKiYEERk4Ua-WGcSw1xx6LZyYAAhEoaxv5FzhL-qLlSoH8d9ABAAMCAAN3AAM9BA"
       ],
-      "status": "pending"
+      "price": 70000,
+      "status": "approved"
     },
     "004-tenzero-peach-hand-cream": {
+      "approved_at": "2026-11-05T10:20:44.538359+05:00",
       "file_ids": [
         "AgACAgIAAxUHaueKjP4Vn2c2phubKqxxHORuqXcAAhYoaxv5FzhL8mPHgcfEajEBAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueKjDZevpqC6YbJPT1HOm7OptUAAhgoaxv5FzhLNX34Nl7Xyj4BAAMCAAN3AAM9BA",
@@ -58,16 +64,19 @@
         "AgACAgIAAxUHaueKjJYpaNwZ_-24qiLimW-eu9IAAhQoaxv5FzhL-k5sj8XTAAHcAQADAgADdwADPQQ",
         "AgACAgIAAxUHaueKjBeP_1UseDxwyii6L2uR4yQAAhUoaxv5FzhLyj7u4zoHP5oBAAMCAAN3AAM9BA"
       ],
-      "status": "pending"
+      "price": 70000,
+      "status": "approved"
     },
     "005-beauty-of-joseon-relief-sun": {
+      "approved_at": "2026-11-05T10:22:32.088426+05:00",
       "file_ids": [
         "AgACAgIAAxUHaueKjgVyIZrJtAywax8XRE8mueoAAhkoaxv5FzhL-U_CGAppxlQBAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueKjtcUX6GEdWZsayNpK_wv6a0AAhooaxv5FzhL3zpjLdV78lsBAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueKjksy5rzahq7l2YasgohP26IAAhwoaxv5FzhL43QOvn_IbA4BAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueKjp1AuAY1DitsKTEGyxYeg_4AAhsoaxv5FzhLpdzocqqCU8gBAAMCAAN3AAM9BA"
       ],
-      "status": "pending"
+      "price": 180000,
+      "status": "approved"
     },
     "006-dalba-white-truffle-serum": {
       "file_ids": [
@@ -109,13 +118,34 @@
       "status": "pending"
     },
     "010-lamelin-cica-4in1-cream": {
-      "status": "new"
+      "file_ids": [
+        "AgACAgIAAxUHauwSNdDORycsn160aH536wbv8_UAAjUeaxs972hLYB5gsrTWNQcBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauwSNYcIjz519RtT3AVDgbCp4isAAjgeaxs972hLG0naHIueuxYBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauwSNcvPhegPnRE75-Ovh3q16IMAAjceaxs972hLqyCXkQOokhEBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauwSNWDGhBHtHyNpRKsmhNBY6bMAAjkeaxs972hLgnsntxaMRJUBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauwSNQ3XdV-ZHUsYQPRRrll79bgAAjYeaxs972hLzKDhSaWBDK0BAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
     },
     "011-luvum-moisture-travel-kit": {
-      "status": "new"
+      "file_ids": [
+        "AgACAgIAAxUHauwSjLgKpGZX6GRft6iB2EyzKigAAkIeaxs972hLkwFaIhyBaH0BAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauwSjNC7ZEREELFkvmd3FK9HgdEAAkUeaxs972hLxw1MlbaxH0wBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauwSjFTcvDkWmjOaiHAvuozdL3EAAkYeaxs972hL-4Ev_gSn_7cBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauwSjFgnjPEBOz03xYwAATXy7RYGAAJEHmsbPe9oS-ITBYGkoxyeAQADAgADdwADPQQ",
+        "AgACAgIAAxUHauwSjKbIuH1e2xD3yuWf4tyqUNoAAkMeaxs972hLz0V0m2JEzT8BAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
     },
     "012-luvum-hyaluronic-sun-cream": {
-      "status": "new"
+      "file_ids": [
+        "AgACAgIAAxUHauwSpCPixCw_0JCcxR6CAY0EW8YAAkceaxs972hLsmcN7gO9BEwBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauwSpFxEuQRZJw7SJt1YOICM3jsAAkkeaxs972hLep3gAmfCqOwBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauwSpDni5hop0sRozP-F4pR44MoAAkgeaxs972hL5BGsX6MaC9gBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauwSpF_N-4IyyyDYtLkslzcFar8AAkseaxs972hLDAMQzjqbaEEBAAMCAAN3AAM9BA",
+        "AgACAgIAAxUHauwSpNnXi9Pl4ZBWdOt0Zt88wqUAAkoeaxs972hLBDcY0OqPrFUBAAMCAAN3AAM9BA"
+      ],
+      "status": "pending"
     },
     "013-stay-nude-hair-body-mist": {
       "status": "new"
@@ -197,6 +227,14 @@
     }
   },
   "preview_msgs": {
+    "8337581357:100": "011-luvum-moisture-travel-kit",
+    "8337581357:101": "011-luvum-moisture-travel-kit",
+    "8337581357:105": "012-luvum-hyaluronic-sun-cream",
+    "8337581357:106": "012-luvum-hyaluronic-sun-cream",
+    "8337581357:107": "012-luvum-hyaluronic-sun-cream",
+    "8337581357:108": "012-luvum-hyaluronic-sun-cream",
+    "8337581357:109": "012-luvum-hyaluronic-sun-cream",
+    "8337581357:110": "012-luvum-hyaluronic-sun-cream",
     "8337581357:13": "001-tenzeu-avocado-peeling-gel",
     "8337581357:14": "001-tenzeu-avocado-peeling-gel",
     "8337581357:15": "001-tenzeu-avocado-peeling-gel",
@@ -248,6 +286,16 @@
     "8337581357:79": "009-lacto-fit-diet",
     "8337581357:80": "009-lacto-fit-diet",
     "8337581357:81": "009-lacto-fit-diet",
-    "8337581357:82": "009-lacto-fit-diet"
+    "8337581357:82": "009-lacto-fit-diet",
+    "8337581357:87": "010-lamelin-cica-4in1-cream",
+    "8337581357:88": "010-lamelin-cica-4in1-cream",
+    "8337581357:89": "010-lamelin-cica-4in1-cream",
+    "8337581357:90": "010-lamelin-cica-4in1-cream",
+    "8337581357:91": "010-lamelin-cica-4in1-cream",
+    "8337581357:92": "010-lamelin-cica-4in1-cream",
+    "8337581357:96": "011-luvum-moisture-travel-kit",
+    "8337581357:97": "011-luvum-moisture-travel-kit",
+    "8337581357:98": "011-luvum-moisture-travel-kit",
+    "8337581357:99": "011-luvum-moisture-travel-kit"
   }
 }
