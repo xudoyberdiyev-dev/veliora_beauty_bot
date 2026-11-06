@@ -14,7 +14,8 @@
     "2026-11-05 10:00",
     "2026-11-05 19:00",
     "2026-11-06 08:00",
-    "2026-11-06 09:00"
+    "2026-11-06 09:00",
+    "2026-11-06 10:00"
   ],
   "offset": 795423865,
   "posts": {
@@ -125,8 +126,10 @@
         "AgACAgIAAxUHauur2pEodZSxLvolTQruNiLqXRYAAg0laxu8IWFLln8iqGb9QgYBAAMCAAN3AAM9BA",
         "AgACAgIAAxUHauur2lzgbNHAa6ytfRy2WGPFJukAAhAlaxu8IWFLGk4odVA8BaYBAAMCAAN3AAM9BA"
       ],
+      "message_id": 82,
+      "posted_at": "2026-11-06T10:02:26.283922+05:00",
       "price": 280000,
-      "status": "approved"
+      "status": "posted"
     },
     "010-lamelin-cica-4in1-cream": {
       "file_ids": [
@@ -294,12 +297,6 @@
     "8337581357:62": "008-juno-acai-berry-peeling-soap",
     "8337581357:63": "008-juno-acai-berry-peeling-soap",
     "8337581357:64": "008-juno-acai-berry-peeling-soap",
-    "8337581357:77": "009-lacto-fit-diet",
-    "8337581357:78": "009-lacto-fit-diet",
-    "8337581357:79": "009-lacto-fit-diet",
-    "8337581357:80": "009-lacto-fit-diet",
-    "8337581357:81": "009-lacto-fit-diet",
-    "8337581357:82": "009-lacto-fit-diet",
     "8337581357:87": "010-lamelin-cica-4in1-cream",
     "8337581357:88": "010-lamelin-cica-4in1-cream",
     "8337581357:89": "010-lamelin-cica-4in1-cream",
