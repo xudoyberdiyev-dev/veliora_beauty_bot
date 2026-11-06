@@ -12,7 +12,8 @@
     "2026-11-03 16:00",
     "2026-11-04 20:00",
     "2026-11-05 10:00",
-    "2026-11-05 19:00"
+    "2026-11-05 19:00",
+    "2026-11-06 08:00"
   ],
   "offset": 795423865,
   "posts": {
@@ -67,8 +68,10 @@
         "AgACAgIAAxUHaueKjJYpaNwZ_-24qiLimW-eu9IAAhQoaxv5FzhL-k5sj8XTAAHcAQADAgADdwADPQQ",
         "AgACAgIAAxUHaueKjBeP_1UseDxwyii6L2uR4yQAAhUoaxv5FzhLyj7u4zoHP5oBAAMCAAN3AAM9BA"
       ],
+      "message_id": 73,
+      "posted_at": "2026-11-06T08:02:16.981656+05:00",
       "price": 70000,
-      "status": "approved"
+      "status": "posted"
     },
     "005-beauty-of-joseon-relief-sun": {
       "approved_at": "2026-11-05T20:31:55.754620+05:00",
@@ -271,12 +274,6 @@
     "8337581357:34": "003-tenzero-snail-hand-cream",
     "8337581357:35": "003-tenzero-snail-hand-cream",
     "8337581357:36": "003-tenzero-snail-hand-cream",
-    "8337581357:37": "004-tenzero-peach-hand-cream",
-    "8337581357:38": "004-tenzero-peach-hand-cream",
-    "8337581357:39": "004-tenzero-peach-hand-cream",
-    "8337581357:40": "004-tenzero-peach-hand-cream",
-    "8337581357:41": "004-tenzero-peach-hand-cream",
-    "8337581357:42": "004-tenzero-peach-hand-cream",
     "8337581357:43": "005-beauty-of-joseon-relief-sun",
     "8337581357:44": "005-beauty-of-joseon-relief-sun",
     "8337581357:45": "005-beauty-of-joseon-relief-sun",
