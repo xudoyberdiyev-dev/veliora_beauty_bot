@@ -13,7 +13,8 @@
     "2026-11-04 20:00",
     "2026-11-05 10:00",
     "2026-11-05 19:00",
-    "2026-11-06 08:00"
+    "2026-11-06 08:00",
+    "2026-11-06 09:00"
   ],
   "offset": 795423865,
   "posts": {
@@ -81,8 +82,10 @@
         "AgACAgIAAxUHaueKjksy5rzahq7l2YasgohP26IAAhwoaxv5FzhL43QOvn_IbA4BAAMCAAN3AAM9BA",
         "AgACAgIAAxUHaueKjp1AuAY1DitsKTEGyxYeg_4AAhsoaxv5FzhLpdzocqqCU8gBAAMCAAN3AAM9BA"
       ],
+      "message_id": 78,
+      "posted_at": "2026-11-06T09:02:09.830381+05:00",
       "price": 185000,
-      "status": "approved"
+      "status": "posted"
     },
     "006-dalba-white-truffle-serum": {
       "file_ids": [
@@ -274,11 +277,6 @@
     "8337581357:34": "003-tenzero-snail-hand-cream",
     "8337581357:35": "003-tenzero-snail-hand-cream",
     "8337581357:36": "003-tenzero-snail-hand-cream",
-    "8337581357:43": "005-beauty-of-joseon-relief-sun",
-    "8337581357:44": "005-beauty-of-joseon-relief-sun",
-    "8337581357:45": "005-beauty-of-joseon-relief-sun",
-    "8337581357:46": "005-beauty-of-joseon-relief-sun",
-    "8337581357:47": "005-beauty-of-joseon-relief-sun",
     "8337581357:48": "006-dalba-white-truffle-serum",
     "8337581357:49": "006-dalba-white-truffle-serum",
     "8337581357:50": "006-dalba-white-truffle-serum",
