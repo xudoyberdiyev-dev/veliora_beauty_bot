@@ -15,5 +15,8 @@
     "18:00",
     "19:00"
   ],
-  "preview_pending_limit": 7
+  "preview_pending_limit": 7,
+  "pause_dates": [
+    "2026-11-08"
+  ]
 }

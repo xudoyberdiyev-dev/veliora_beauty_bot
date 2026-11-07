@@ -419,6 +419,8 @@ class Bot:
         return "-"
 
     def publish_if_due(self):
+        if self.now.strftime("%Y-%m-%d") in self.cfg.get("pause_dates", []):
+            return  # dam olish kuni: kanalga avtomatik post chiqmaydi
         slot = self.current_slot()
         if not slot:
             return
