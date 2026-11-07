@@ -513,6 +513,10 @@ def main():
     if not token:
         sys.exit("BOT_TOKEN topilmadi (GitHub → Settings → Secrets → Actions).")
     config = load_json(CONFIG_FILE, {})
+    today = datetime.now(TZ).strftime("%Y-%m-%d")
+    if today in config.get("off_dates", []):
+        log("bugun dam olish kuni — bot ishlamaydi")
+        return
     state = load_json(STATE_FILE, {})
     bot = Bot(Telegram(token), config, state, datetime.now(TZ))
     admin = os.environ.get("ADMIN_CHAT_ID", "").strip()

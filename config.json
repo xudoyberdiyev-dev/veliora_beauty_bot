@@ -18,5 +18,8 @@
   "preview_pending_limit": 7,
   "pause_dates": [
     "2026-11-08"
+  ],
+  "off_dates": [
+    "2026-11-08"
   ]
 }
